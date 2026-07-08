@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artisan Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Artisan Bakery</h1>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Orders</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <h2>Freshly Baked Every Day</h2>
+  <p>Welcome to Artisan Bakery.</p>
+  <button id="orderBtn" aria-label="Order Now">Order Now</button>
+</section>
+
+<section>
+  <h2>Popular Items</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Croissant</h3>
+      <p>Fresh Butter Croissant</p>
+    </div>
+
+    <div class="card">
+      <h3>Chocolate Cake</h3>
+      <p>Rich Chocolate Flavor</p>
+    </div>
+
+    <div class="card">
+      <h3>Bread</h3>
+      <p>Whole Wheat Bread</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Search Result</h2>
+  <div class="empty">No data found.</div>
+</section>
+
+<section>
+  <h2>Loading</h2>
+  <div id="loading" class="loading hidden" aria-live="polite">
+    Loading...
+  </div>
+</section>
+
+<section>
+  <h2>Contact Form</h2>
+
+  <form id="contactForm">
+
+    <label for="name">Name</label>
+    <input
+      id="name"
+      type="text"
+      required
+      aria-label="Name">
+
+    <label for="email">Email</label>
+    <input
+      id="email"
+      type="email"
+      required
+      aria-label="Email">
+
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      required
+      aria-label="Message"></textarea>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</section>
+
+</main>
+
+<footer>
+  © 2026 Artisan Bakery
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
